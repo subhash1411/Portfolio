@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js"></script>
+    
+    <script src="https://kit.fontawesome.com/043eaf01d3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!------------------Header Section----------------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/Images/Logo_Square.png" alt="Logo" class="logo-img">
+            
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Experence</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- Close menu icon -->
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <!-- Open menu icon -->
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <div class="dynamic">
+                    <ul class="dynamic-text">
+                        <li><span>Software Deveplor</span></li>
+                        <li><span>Web Developer</span></li>
+                        <li><span>Student</span></li>
+                    </ul>
+                </div>
+                <h1>Hello<span>,</span> <br>I am <span>Subhash</span>  <br><i class="fa-solid fa-location-dot"></i> India.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!------------------ABOUT ME---------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/Images/Photo-removebg-2.png" alt="Profile Photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About</h1>
+                    <p>
+                       As a fresher, my objective is to gain valuable experience and develop my skills in a challenging and dynamic work environment.
+                       I am looking for an opportunity to contribute to a team and company while gaining practical experience and building 
+                       a foundation for a successful career
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event,'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event,'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event,'education')">Educations</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span><i class="fa-solid fa-code"></i> Programming Languages <b>:</b></span><br>
+                                <p class="skills-list">
+                                    Python, C Language, Java
+                                </p>
+                            </li>
+                            <li>
+                                <span><i class="fa-solid fa-laptop-code"></i> Web Tech <b>:</b></span><br>
+                                <p class="skills-list">HTML, CSS, JavaScript</p>
+                            </li>
+                            <li>
+                                <span><i class="fa-solid fa-database"></i> Storage <b>:</b></span>
+                                <p class="skills-list">SQL, Google Cloud(GCP), AWS</p>
+                            </li>
+                            <li>
+                                <span><i class="fa-solid fa-toolbox"></i> Tools <b>:</b></span><br>
+                                <p class="skills-list">Git & Github, VS code, Google Suite, Canva, Android Studio</p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Cyber Security Trainee</span><br>ST7 Surveillance Solutions</li>
+                            <li><span>Beta Testing Mobile Gaming Intern</span><br>Bowled.io </li>
+                            <li><span>Full Stack Java Trainee</span><br>Adhoc Networking Tech Company</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024 - 2026</span><br>MCA from Andhra University, Visakhapatnam</li>
+                            <li><span>2021 - 2024</span><br>BCA from Aditya Degree College, Rajahmundry </li>
+                            <li><span>2019 - 2021</span><br>Intermediate from BIE AP</li>
+                            <li><span>2019</span><br>10th class from SSC AP</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!---------------------Services----------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites.
+                        The different areas of web design include web graphic design; user interface design (UI design);</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/ UX Design</h2>
+                    <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites.
+                        The different areas of web design include web graphic design; user interface design (UI design);</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites.
+                        The different areas of web design include web graphic design; user interface design (UI design);</p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------Portfolio------------------------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work.jfif" alt="Image-1">
+                    <div class="layer">
+                        <h3>Social media App</h3>
+                        <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. 
+                            The different areas of web design include web graphic design; user interface design (UI design);</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work.jfif" alt="image-2">
+                    <div class="layer">
+                        <h3>Social media App</h3>
+                        <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. 
+                            The different areas of web design include web graphic design; user interface design (UI design);</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work.jfif" alt="image-3">
+                    <div class="layer">
+                        <h3>Social media App</h3>
+                        <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. 
+                            The different areas of web design include web graphic design; user interface design (UI design);</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!----------------------Contact Info------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>saisubhash.sunkavalli@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i><a href="+918247220503">+918247220503</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sai-subhash-sunkavalli-a26627272/" target="_blank"><i class="fa-brands fa-linkedin" title="linkedin"></i></a>
+                        <a href="https://github.com/subhash1411" target="_blank"><i class="fa-brands fa-github" title="Git Hub"></i></a>
+                        <a href="https://www.hackerrank.com/profile/subhashchowdary4" target="_blank"><i class="fa-brands fa-hackerrank" title="Hacker Rank"></i></a>
+                        <a href="https://leetcode.com/u/_subhash_18_/" target="_blank"><i class="fa-solid fa-code" title="Leetcode"></i></a>
+
+                    </div>
+                    <a href="#" download class="btn btn2">Download My Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email-id" placeholder="Your Email ID" required>
+                        <textarea name="Message" rows="6"  placeholder="Your Message to Me"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copy-rights">
+            <p>Copyright @ Subash. Made with <i class="fa-solid fa-heart"></i>by easy Tutorial</p>
+        </div>
+    </div>
+
+    <script>
+        /* This section about sorting contact information to google sheeets */
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzx2usZrgE0NEIp-9LnAzbi3c_UdIyD8cOEIoHbMJPw0JYeUgp1ORce6CvD7iuTmyKw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
