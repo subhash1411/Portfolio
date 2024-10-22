@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/Portfolio/style.css">
+    <script src="/Portfolio/script.js"></script>
+    
+    <script src="https://kit.fontawesome.com/043eaf01d3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!------------------Header Section----------------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/Portfolio/Images/Logo_Square.png" alt="Logo" class="logo-img">
+            
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#my-experience">Experience</a></li>
+                    <li><a href="#my-skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- Close menu icon -->
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <!-- Open menu icon -->
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <div class="dynamic">
+                    <ul class="dynamic-text">
+                        <li><span>Software Deveplor</span></li>
+                        <li><span>Web Developer</span></li>
+                        <li><span>Student</span></li>
+                    </ul>
+                </div>
+                <h1>Hello<span>,</span> <br>I am <span>Subhash</span>  <br><i class="fa-solid fa-location-dot"></i> India.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!------------------ABOUT ME---------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/Portfolio/Images/Photo-removebg-2.png" alt="Profile Photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About</h1>
+                    <p>
+                       As a fresher, my objective is to gain valuable experience and develop my skills in a challenging and dynamic work environment.
+                       I am looking for an opportunity to contribute to a team and company while gaining practical experience and building 
+                       a foundation for a successful career.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event,'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event,'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event,'education')">Educations</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span><i class="fa-solid fa-code"></i> Programming Languages <b>:</b></span><br>
+                                <p class="skills-list">
+                                    Python, C Language, Java
+                                </p>
+                            </li>
+                            <li>
+                                <span><i class="fa-solid fa-laptop-code"></i> Web Tech <b>:</b></span><br>
+                                <p class="skills-list">HTML, CSS, JavaScript</p>
+                            </li>
+                            <li>
+                                <span><i class="fa-solid fa-database"></i> Storage <b>:</b></span>
+                                <p class="skills-list">SQL, Google Cloud(GCP), AWS</p>
+                            </li>
+                            <li>
+                                <span><i class="fa-solid fa-toolbox"></i> Tools <b>:</b></span><br>
+                                <p class="skills-list">Git & Github, VS code, Google Suite, Canva, Android Studio</p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>Cyber Security Trainee</span> <i class="fa-solid fa-at"></i> <b> ST7 Surveillance Solutions </b>
+                                <a href="https://www.linkedin.com/company/st7surveillancesolution/"><i class="fa-brands fa-linkedin"></i></a> <br>
+                                <p class="role-rep"> 
+                                    <span>Role & Responsibilities</span> 
+                                    <br>
+                                    Acquired comprehensive knowledge in cybersecurity principles, threat modeling, vulnerability assessment,
+                                    and ethical hacking activities such as penetration testing and network scanning. Conducted in-depth 
+                                    analysis of real-time cyberattacks, documenting methodologies, findings, and implementing defense mechanisms.
+                                    <br>
+                                    <b>Skills : </b> Python, Linux, Power point
+                                </p>
+                            </li>
+                            <li>
+                                <span>Beta Testing Mobile Gaming Intern </span><i class="fa-solid fa-at"></i> <b>Bowled.io </b>
+                                <a href="https://www.linkedin.com/company/bowleddotio/"><i class="fa-brands fa-linkedin"></i></a> <br>
+                                <p class="role-rep"> 
+                                    <span>Role & Responsibilities</span> 
+                                    <br>
+                                    Doing QA testing of mobile app, games and all functionalities.
+                                    Reporting test results on a daily basis.
+                                    Provided feedback & suggestions to improve the app and the games.
+
+                                    <br>
+                                    <b>Skills : </b> Excel, Bug Repoting, Suggesting new fatures
+                                </p>
+                            </li>
+                            <li>
+                                <span>Full Stack Java Trainee </span><i class="fa-solid fa-at"></i> <b>Adhoc Networking Tech Company </b>
+                                <a href="https://www.linkedin.com/company/adhocnetwork/"><i class="fa-brands fa-linkedin"></i></a> <br>
+                                <p class="role-rep"> 
+                                    <span>Role & Responsibilities</span> 
+                                    <br>
+                                    Completed a full stack Java trainee internship, gaining strong theoretical knowledge.
+                                    Developed hands-on skills in Servlets, HTML, and CSS through practical projects.
+                                    Built a website on Adhoc networking profile organization, showcasing my technical abilities.
+
+                                    <br>
+                                    <b>Skills : </b> Java, HTML, CSS
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024 - Present</span><br><span>MCA</span> from Andhra University, Visakhapatnam (Mode :<span> Online</span>).</li>
+                            <li><span>2021 - 2024</span><br><span>BCA</span> from Aditya Degree College, Rajahmundry.</li>
+                            <li><span>2019 - 2021</span><br><span>Intermediate</span> from BIE AP.</li>
+                            <li><span>2019</span><br><span>10th class</span> from SSC AP.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-------------------Projects------------------------------>
+    <div id="Projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/Portfolio/Images/work.jfif" alt="Image-1">
+                    <div class="layer">
+                        <h3>Online Trail Room</h3>
+                        <p><b>Skills : </b>HTML, CSS, Java,Git</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/Portfolio/Images/Projects/Voice Enabled Smart Home.jpeg" alt="image-2">
+                    <div class="layer">
+                        <h3>Voice - Enabled Smart Living Ecosystem</h3>
+                        <p>
+                            <b>Problem Statement :</b> Enabling control of household electronic applications through voice
+                            commands and a web application accessible globally. <br>
+                            <b>Skills : </b>Power Point | Web Technologies
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/Portfolio/Images/Projects/Grade_Calculator.png" alt="image-3">
+                    <div class="layer">
+                        <h3>Academic CGPA Calculator</h3>
+                        <p>
+                            <b>Problem Statement : </b> Creating a web page to accurately calculate CGPA based on the AKNU University grading system.<br>
+                            <b>Skills : </b>HTML, CSS, Javascript, Git & Github, VS Code
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!---------------------Experience----------------------->
+    <div id="my-experience">
+        <div class="container">
+            <h1 class="sub-title">My Experiences</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-shield"></i>
+                    <h2>Cyber Security Trainee</h2>
+                    <p>Acquired comprehensive knowledge in cybersecurity principles, threat modeling, vulnerability assessment,
+                        and ethical hacking activities such as penetration testing and network scanning. Conducted in-depth 
+                        analysis of real-time cyberattacks, documenting methodologies, findings, and implementing defense mechanisms.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile"></i>
+                    <h2>Beta Testing Mobile Gaming Intern</h2>
+                    <p>Doing QA testing of mobile app, games and all functionalities. <br>
+                        Reporting test results on a daily. <br>
+                        Provided feedback & suggestions to improve the app and the games.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Full Stack Java Trainee</h2>
+                    <p>
+                        Completed a full stack Java trainee internship, gaining strong theoretical knowledge. <br>
+                        Developed hands-on skills in Servlets, HTML, and CSS through practical projects. <br>
+                        Built a website on Adhoc networking profile organization, showcasing my technical abilities.</p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------Skills---------------------->
+    <div id="my-skills">
+        <h1 class="sub-title">My Skills</h1>
+        <section class="skills-section">
+            <div class="wall">
+                <!-------First Line------>
+                <div class="v-boxes">
+                    <!-------First Line Python Box------>
+                    <div class="box">
+                        <span class="tooltip">Python</span>
+                        <div class="box-face">
+                            <div class="box-text"><i class="fa-brands fa-python"></i></div>
+                        </div>
+                        <div class="box-back">
+                            <div class="box-text">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-------First Line C Language Box------>
+                    <div class="box">
+                        <span class="tooltip">C Language</span>
+                        <div class="box-face">
+                            <div class="box-text"><i class="fa-solid fa-c"></i></div>
+                        </div>
+                        <div class="box-back">
+                            <div class="box-text">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-------First Line SQL Box------>
+                    <div class="box">
+                        <span class="tooltip">SQL</span>
+                        <div class="box-face">
+                            <div class="box-text"><i class="fa-solid fa-database"></i></div>
+                        </div>
+                        <div class="box-back">
+                            <div class="box-text">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-------First Line Java Box------>
+                    <div class="box">
+                        <span class="tooltip">Java</span>
+                        <div class="box-face">
+                            <div class="box-text"><i class="fa-brands fa-java"></i></div>
+                        </div>
+                        <div class="box-back">
+                            <div class="box-text">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-------Second Line------>
+                <div class="v-boxes second">
+                    <!-------Second Line  HTML Box------>
+                    <div class="box">
+                        <span class="tooltip">HTML</span>
+                        <div class="box-face">
+                            <div class="box-text"><i class="fa-brands fa-html5"></i></div>
+                        </div>
+                        <div class="box-back">
+                            <div class="box-text">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-------Second Line  CSS Box------>
+                    <div class="box">
+                        <span class="tooltip">CSS</span>
+                        <div class="box-face">
+                            <div class="box-text"><i class="fa-brands fa-css3-alt"></i></div>
+                        </div>
+                        <div class="box-back">
+                            <div class="box-text">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>        
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-------Second Line  JavaScript Box------>
+                    <div class="box">
+                        <span class="tooltip">JavaScript</span>
+                        <div class="box-face">
+                            <div class="box-text"><i class="fa-brands fa-js"></i></div>
+                        </div>
+                        <div class="box-back">
+                            <div class="box-text">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-------Third Line------>
+                <div class="v-boxes third">
+                    <!-------Third Line  GCP Box------>
+                    <div class="box">
+                        <span class="tooltip">GCP</span>
+                        <div class="box-face">
+                            <div class="box-text"><i class="fa-solid fa-cloud"></i></div>
+                        </div>
+                        <div class="box-back">
+                            <div class="box-text">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-------Third Line  VS Code Box------>
+                    <div class="box">
+                        <span class="tooltip">VS Code</span>
+                        <div class="box-face">
+                            <div class="box-text"><i class="fa-solid fa-code"></i></div>
+                        </div>
+                        <div class="box-back">
+                            <div class="box-text">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>   
+                                <i class="fa-solid fa-star-half"></i>     
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-------Forth Line------>
+                <div class="v-boxes forth">
+                    <!-------Forth Line  Git & Github Box------>
+                    <div class="box link" id="box-text-git">
+                        <div class="box-face">
+                          <div class="box-text"><i class="fa-brands fa-github"></i></div>
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!----------------------Contact Info------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>saisubhash.sunkavalli@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i><a href="+918247220503">+918247220503</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sai-subhash-sunkavalli-a26627272/" target="_blank"><i class="fa-brands fa-linkedin" title="linkedin"></i></a>
+                        <a href="https://github.com/subhash1411" target="_blank"><i class="fa-brands fa-github" title="Git Hub"></i></a>
+                        <a href="https://www.hackerrank.com/profile/subhashchowdary4" target="_blank"><i class="fa-brands fa-hackerrank" title="Hacker Rank"></i></a>
+                        <a href="https://leetcode.com/u/_subhash_18_/" target="_blank"><i class="fa-solid fa-code" title="Leetcode"></i></a>
+
+                    </div>
+                    <a href="/Portfolio/Images/Sai_Subhash_Sunkavalli_Resume.pdf" download class="btn btn2">Download My Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email-id" placeholder="Your Email ID" required>
+                        <textarea name="Message" rows="6"  placeholder="Your Message to Me"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copy-rights">
+            <p>Copyright @ Subash. Made with <i class="fa-solid fa-heart"></i>by easy Tutorial</p>
+        </div>
+    </div>
+
+
+    <!-----This section about sorting contact information to google sheeets----->
+    <script>
+        /* This section about sorting contact information to google sheeets */
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzx2usZrgE0NEIp-9LnAzbi3c_UdIyD8cOEIoHbMJPw0JYeUgp1ORce6CvD7iuTmyKw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
